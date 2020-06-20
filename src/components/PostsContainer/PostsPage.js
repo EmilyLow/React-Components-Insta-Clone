@@ -1,17 +1,30 @@
 //Complete the necessary code in this file
 // import useState
-import React from "react";
+import React, {useState} from "react";
 import Post from "./Post";
 import "./Posts.css";
 // import data 
+import dummyData from "../../dummy-data"
 
 const PostsPage = () => {
   // set up state for your data
+  const [data, setData] = useState(dummyData);
+  //const data = dummyData;
   return (
     <div className="posts-container-wrapper">
-      {/* map through data here to return a Post and pass data as props to Post */}
+    
+        
+        {data.map( postItem => 
+         <Post post={postItem}/> 
+         )}
+
+          
+    
+      
+
     </div>
   );
 };
+console.log("Postpagetest");
 
 export default PostsPage;

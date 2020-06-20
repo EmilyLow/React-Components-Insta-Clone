@@ -4,12 +4,16 @@ import CommentSection from "../CommentSection/CommentSectionContainer";
 import LikeSection from "./LikeSection";
 import PostHeader from "./PostHeader";
 
+
+
 import "./Posts.css";
 
 // pass props in this file to
 const Post = props => {
   // set up state for the likes
+ //let [likes, setLikes] = useState(0);
 
+ //console.log("likes", likes);
   return (
     <div className="post-border">
       <PostHeader
