@@ -8,6 +8,7 @@ const CommentInput = props => {
         type="text"
         value={props.comment}
         placeholder="Add comment... "
+        //Need to pass something here for it to work? Or does form do that automatically
         onChange={props.changeComment}
       />
     </form>

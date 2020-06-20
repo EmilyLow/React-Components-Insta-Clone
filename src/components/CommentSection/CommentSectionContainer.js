@@ -7,9 +7,12 @@ import "./Comment.css";
 const CommentSection = props => {
  
   // Add state for the comments
-  const [commentsData, setComment] = useState(props.comments);
+  const [commentsData, setComments] = useState(props.comments);
  //console.log("props", props);
- console.log(commentsData);
+ //Or maybe submit comment?
+ let changeComment = (input) => {
+   setComments(commentsData.push(input));
+ }
   return (
     <div>
       {/* map through the comments data and return the Comment component */
