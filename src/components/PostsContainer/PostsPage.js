@@ -9,11 +9,10 @@ import dummyData from "../../dummy-data"
 const PostsPage = () => {
   // set up state for your data
   const [data, setData] = useState(dummyData);
-  //const data = dummyData;
+  
   return (
     <div className="posts-container-wrapper">
     
-        
         {data.map( postItem => 
          <Post post={postItem}/> 
          )}
@@ -25,6 +24,6 @@ const PostsPage = () => {
     </div>
   );
 };
-console.log("Postpagetest");
+
 
 export default PostsPage;
