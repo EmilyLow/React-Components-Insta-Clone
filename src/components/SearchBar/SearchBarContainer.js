@@ -31,5 +31,5 @@ const SearchBar = () => {
     </div>
   );
 };
-console.log("TEST search bar");
+
 export default SearchBar;

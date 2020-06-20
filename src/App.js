@@ -25,5 +25,5 @@ const App = () => {
   );
 };
 
-console.log("TEST");
+
 export default App;
